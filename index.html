@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMIC-CHAT PRO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="loading">
+    <div class="app-wrapper">
+        <div class="floating-badge">AI COMING SOON!</div>
+
+        <section id="auth-view" class="view active">
+            <div class="comic-card bounce-in">
+                <h1 class="logo-text">CHAT-ZONE</h1>
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="switchAuth('login')">LOGIN</button>
+                    <button class="tab-btn" onclick="switchAuth('signup')">SIGN UP</button>
+                </div>
+                <form id="auth-form" class="comic-form">
+                    <input type="text" id="username" placeholder="SUPER-HERO NAME" required>
+                    <input type="password" id="password" placeholder="SECRET KEY" required>
+                    <button type="submit" class="primary-btn">ENGAGE!</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="chat-view" class="view">
+            <nav class="main-nav">
+                <div class="search-box">
+                    <input type="text" id="user-search" placeholder="SEARCH USERS...">
+                    <button id="search-btn">🔍</button>
+                </div>
+                <button onclick="logout()" class="logout-btn">EXIT</button>
+            </nav>
+
+            <main class="chat-container">
+                <div id="chat-messages" class="messages-area">
+                    <div class="status-msg">Welcome to the Zone. Search a user to start.</div>
+                </div>
+                <footer class="input-bar">
+                    <input type="text" id="chat-input" placeholder="WRITE SOMETHING...">
+                    <button id="send-btn">SEND!</button>
+                </footer>
+            </main>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
