@@ -70,3 +70,10 @@ function showNotification(msg) {
 chatInput.addEventListener('keypress', (e) => {
     if(e.key === 'Enter') sendBtn.click();
 });
+
+
+    // Replace these with your actual Supabase details
+const supabaseUrl = 'https://mannudgqpdpeelyvwpbz.supabase.co'; 
+const supabaseKey = 'PASTE_THE_ANON_PUBLIC_KEY_HERE'; // Starts with eyJ...
+
+const _supabase = supabase.createClient(supabaseUrl, supabaseKey);
